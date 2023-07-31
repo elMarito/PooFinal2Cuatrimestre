@@ -19,6 +19,7 @@ const FilterBy = () => {
 
         setCache((prevState) => ({ ...prevState, filters: newSelectedCategories }));
     }
+    const isChecked = (option) => (cache.filters.includes(option));
 
     // const isChecked = (option) => cache.order === option;
     //obtener las categorias con fetch
@@ -48,7 +49,7 @@ const FilterBy = () => {
                 <ul>
                     {categories.map(cate =>
                         <li key={cate}>
-                            <input onChange={handleChange} type="checkbox" id={cate} value={cate} />
+                            <input onChange={handleChange} type="checkbox" id={cate} value={cate} checked={isChecked(cate)} />
                             <label htmlFor={cate}>{cate}</label>
                         </li>
                     )}
