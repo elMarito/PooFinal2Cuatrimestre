@@ -1,0 +1,47 @@
+/* Login.css */
+
+/* Estilos para el formulario */
+.form-container {
+    max-width: 500px;
+    height: auto;
+    margin: 5px auto;
+    padding: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .form-container input[type="text"],
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .form-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  

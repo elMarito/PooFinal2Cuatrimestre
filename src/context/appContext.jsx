@@ -27,8 +27,7 @@ export const AppContextProvider = ({ children }) => {
     productsShown: 0,
     user: null,
   });
-  // list=true;
-
+  
   // const [dbAdapter, setdbAdapter] = useState(new DbAdapter());
   // console.log("hola2");
   // const getProducts = (url) => {

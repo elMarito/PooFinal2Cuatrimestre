@@ -1,11 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Routes, Route } from "react-router-dom";
-import { appContext } from './context/appContext';
-// import { useState } from 'react'
+// import { appContext } from './context/appContext';
 
-// import './App.css'
-// import { DbAdapter } from "./services/dbAdapter";
-import './components/cart.css';
+
 
 import NavBar from './components/NavBar';
 import Home from './components/HomePage/Home';
@@ -25,45 +22,6 @@ function App() {
   // let cart = cache?.cart;
   // }  // const products = getProducts(BASE_URL);
 
-  // return (
-  //     <BrowserRouter>
-  //       <Routes>
-  //         <Route path='/' element='<App/>' />
-  //         <Route path='/Products' element='<Products/>' />
-  //         <Route path='/cart' element='<CartComponent/>' />
-  //         {/* <Route path='/User' element='<User/>'/> */}
-  //       </Routes>
-  //     </BrowserRouter>
-  // );
-
-  // purchase items
-  // open cart modal
-  // const carttt = document.querySelector('#cart');
-  // const cartModalOverlay = document.querySelector('.cart-modal-overlay');
-
-  // carttt.addEventListener('click', () => {
-  //   if (cartModalOverlay.style.transform === 'translateX(-200%)') {
-  //     cartModalOverlay.style.transform = 'translateX(0)';
-  //   } else {
-  //     cartModalOverlay.style.transform = 'translateX(-200%)';
-  //   }
-  // })
-  // const closeCartModal = document.querySelector('.cart-modal');
-  // document.querySelector('.purchase-btn')
-  //   .addEventListener('click', () => {
-  //     alert('Thank you for your purchase');
-  //     cartModalOverlay.style.transform = 'translateX(-100%)'
-  //     var cartItems = document.getElementsByClassName('product-rows')[0]
-  //     while (cartItems.hasChildNodes()) {
-  //       cartItems.removeChild(cartItems.firstChild)
-
-  //     }
-  //     // updateCartPrice()
-  //   }
-  //   )
-
-
-
   return (<div className="app">
     <header>
       <NavBar />
@@ -75,13 +33,13 @@ function App() {
         <Route path='/Cart' element={<Cart />} />
         {/* <Route path='/Products/:id' element={<Product />} /> */}
         {/* <Route path='/User' element='<User/>'/> */}
+        <Route path='/Login' element={<Login/>}/>
         {/* <Route path="*" component={NotFound} /> */}
         {/* </Switch>  */}
       </Routes>
     </main>
     {/* <div id='footer'></div> */}
     <footer>
-      <Login />
       <img src='/logo-no-background.svg' alt="logo Mercado Trucho" />
       <p>Copyright Mario Patronelli</p>
     </footer>

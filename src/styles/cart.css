@@ -1,0 +1,124 @@
+/* @import "./components/colors.css"; */
+
+/* .cart{}
+.cart > h2{}
+.cart > p{}
+.cart > ul{}
+.cart > ul > p{}
+.cart > ul > li {}
+.cart > ul > li > span {}
+.cart > ul > li > button{} */
+
+/* Estilos generales */
+/* body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+} */
+
+/* Estilos para la sección del carrito */
+.cart {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+  width: 100%;
+  /* max-width: 600px; */
+  margin: 5px;
+  padding: 20px;
+  /* background-color: var(--secondary); */
+  border: 1px solid var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.cart header {
+  justify-content: space-between;
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  display: block;
+  min-height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  overflow-wrap: break-word;
+}
+
+/* .cart span {
+  word-wrap: break-word;
+} */
+
+.left-text {
+  font-size: 24px;
+  /* margin-right: 10px; */
+}
+
+.right-text {
+  font-size: 18px;
+  /* margin-left: 10px; */
+}
+
+/* Estilos para los span dentro de li */
+.cart li span {
+  flex: 1;
+  /* word-wrap: break-word; */
+  overflow-wrap: break-word;
+
+  /* Opcional: Puedes establecer un ancho máximo para controlar el wrapping */
+  /* max-width: 200px; */
+}
+
+.cart li:last-child {
+  border-bottom: none;
+}
+
+.cart button {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.cart h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+/* Estilos para dispositivos móviles y tablets */
+@media only screen and (max-width: 600px) {
+  .cart {
+    padding: 10px;
+  }
+
+  .cart h2 {
+    font-size: 20px;
+  }
+
+  .cart li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .cart button {
+    margin-top: 5px;
+  }
+
+  .cart h3 {
+    font-size: 18px;
+  }
+}

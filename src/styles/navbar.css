@@ -1,0 +1,57 @@
+/**para centrar**/
+header>nav {
+  /* background-color: (--main-bg-color); */
+  display: flex;
+  justify-content: space-between;
+  /* Para distribuir los elementos a lo largo del contenedor */
+  align-items: center;  
+}
+
+.logo {
+  width: 200px;
+  border-radius: 10px;
+  background-color: var(--background);
+}
+
+.profile {
+  background-color: olivedrab;
+}
+.profile button{
+  background-color: var(--accent-color);
+}
+/******************************************************************* */
+.cart-container {
+  margin: 10px;
+  /* position: relative; */
+  /* display: inline-block; */
+  background-color: var(--main-bg-color);
+  border-radius: 40%;
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart {
+  font-size: 40px;
+  /* Adjust the font size as needed */
+}
+
+.cart-badge {
+  position: relative;
+  top: -20px;
+  right: 45px;
+  /* Adjust the top position to move the number up or down */
+  width: 1em;
+  background-color: var(--accent-color);
+  /* Optional: Set the background color of the badge */
+  color: var(--background);
+  /* Optional: Set the text color of the badge */
+  border-radius: 50%;
+  /* Optional: Add a border-radius to make the badge circular */
+  padding: 6px;
+  /* Optional: Adjust the padding to increase/decrease the size of the badge */
+  font-size: 15px;
+  /* Optional: Adjust the font size of the badge text */
+  font-weight: bold;
+}

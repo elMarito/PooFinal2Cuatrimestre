@@ -1,0 +1,188 @@
+@import "./colors.css";
+
+:root {
+  background-color: var(--background);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+img {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  /* margin-bottom: 10px; */
+}
+
+header,
+footer {
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main {
+  /**para centrar**/
+  margin-inline: auto;
+  display: flex;
+  /* margin-top: 5px; */
+  width: 100%;
+  background-color: var(--background);
+}
+
+aside {
+  /* background-color: var(--main-bg-color); */
+  width: fit-content;
+  /* min-width: 200px; */
+  padding: .5rem;
+  /* margin-right: auto; */
+}
+
+section {
+  /* background-color: var(--main-bg-color); */
+  /* margin-left: auto; */
+  padding: .5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  /* Para distribuir los elementos a lo largo del contenedor */
+  align-items: center;
+  /* width: 100%; */
+}
+
+li {
+  white-space: nowrap;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* : center; */
+  gap: 10px;
+}
+
+.product {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  position: relative;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.filter {
+  margin-top: 1rem;
+  background-color: var(--secondary-color);
+  /* height: 150px; */
+}
+
+.filter>fieldset>ul {
+  list-style-type: none;
+  padding-left: 0;
+  /* appearance: none; */
+}
+
+.order {
+  /* padding: 0.2rem; */
+  background-color: var(--secondary-color);
+  /* height: 150px; */
+}
+
+.order,
+.filter {
+  padding: 0.3rem;
+}
+
+.nav-search-btn .nav-icon-search:before {
+  content: "";
+  vertical-align: top
+}
+
+/**************************/
+.product-rating {
+  position: absolute;
+  width: 1em;
+  top: 0.5em;
+  /* Adjust the top position to move the number up or down */
+  right: 3em;
+  box-shadow: -3px 3px 0px 5px rgba(133, 59, 244, 0.68);
+
+  background-color: var(--background);
+  /* Optional: Set the background color of the badge */
+  /*color: white; /* Optional: Set the text color of the badge */
+  border-radius: 50%;
+  /* Optional: Add a border-radius to make the badge circular */
+  padding: 6px;
+  /* Optional: Adjust the padding to increase/decrease the size of the badge */
+  font-size: 15px;
+  /* Optional: Adjust the font size of the badge text */
+  font-weight: bold;
+}
+
+/**************************/
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .product-list {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    margin: 10px;
+  }
+}
+
+
+@media (min-width:300px) {
+  #root {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* : center; */
+    gap: 10px;
+    /* justify-content: space-between; */
+    /* padding: 0.3rem; */
+    /* width: 100%; */
+  }
+
+  main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+    /* width: 100%; */
+    /* height: 800px; */
+  }
+
+  /* section {
+    width: 80%;
+    /* margin-left: auto; */
+  /*} */
+
+  aside {
+    /* margin-right: auto; */
+    position: sticky;
+    top: 0;
+    /* width: 20%; */
+    /* height: 100px; */
+  }
+}

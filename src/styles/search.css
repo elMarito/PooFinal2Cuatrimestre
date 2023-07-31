@@ -1,0 +1,44 @@
+/* .searchForm {} */
+/* #searchForm {} */
+
+.searchForm,
+#searchForm {
+  /* width: max-content; */
+  display: flex;
+  justify-content: space-between;
+  /* Para distribuir los elementos a lo largo del contenedor */
+
+  width: 100%;
+  box-sizing: border-box;
+  /* Para incluir el padding y el borde en el ancho total */
+  margin: 5px;
+  min-width: min( 100px,100vw);
+}
+
+#searchData {
+  min-width: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Para incluir el padding y el borde en el ancho total */
+  /* position: relative;
+  z-index: 915;
+  color: #333;*/
+  font-size: 16px;
+  margin: 0;
+/*  font-family: inherit; 
+  -webkit-border-radius: 2px;*/
+  border-radius: 2px;
+  background-color: #fff;
+  /* display: -webkit-flex;
+  display: flex; */
+  /* -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2); */
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  height: 40px;
+  /* width: 100%; */
+  padding: 10px 60px 10px 15px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+  border-width: 1.5px;
+}
+
+/* #searchForm>input {} */
